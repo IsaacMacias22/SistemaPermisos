@@ -33,3 +33,5 @@ D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\ManejadoresSistemaPermisos\obj\Debug\ManejadoresSistemaPermisos.csproj.CopyComplete
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\ManejadoresSistemaPermisos\obj\Debug\ManejadoresSistemaPermisos.dll
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\ManejadoresSistemaPermisos\obj\Debug\ManejadoresSistemaPermisos.pdb
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\ManejadoresSistemaPermisos\bin\Debug\CRUD.dll
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\ManejadoresSistemaPermisos\bin\Debug\CRUD.pdb

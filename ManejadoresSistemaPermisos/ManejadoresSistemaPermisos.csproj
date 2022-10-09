@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CRUD">
+      <HintPath>..\..\..\..\..\..\Semestre 4\Tópicos Avanzados de Programación\Proyectos\CRUD\CRUD\bin\Debug\CRUD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

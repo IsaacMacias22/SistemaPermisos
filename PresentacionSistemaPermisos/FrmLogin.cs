@@ -27,7 +27,7 @@ namespace PresentacionSistemaPermisos
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
@@ -35,9 +35,14 @@ namespace PresentacionSistemaPermisos
             Usuarios usuario = new Usuarios(0, mtxtUsuario.Text, "", "", "", "", "", mtxtPwd.Text);
             int x = manejadorUsuarios.Mostrar(usuario);
             if (x > 0)
-                MessageBox.Show("Acceso concedido");
+            {
+                MessageBox.Show("Acceso concedido","",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                FrmMenu fm = new FrmMenu();
+                fm.Show();
+            }
             else
-                MessageBox.Show("Acceso denegado");
+                MessageBox.Show("Acceso denegado", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

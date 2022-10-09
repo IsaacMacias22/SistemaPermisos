@@ -18,12 +18,14 @@ namespace AccesoDatosSistemaPermisos
 
         public void Guardar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            b.Comando(string.Format("call p_insertOrUpdateUsuario({0},'{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                Entidad.IdUsuario, Entidad.Usuario, Entidad.Nombre, Entidad.Apellidop, Entidad.Apellidom,
+                Entidad.FechaNacimiento, Entidad.Rfc, Entidad.Pwd));
         }
 
         public DataSet Mostrar(string filtro)
         {
-            throw new NotImplementedException();
+            return b.Obtener(string.Format("call p_showUsuarios('%{0}%')",filtro),"usuarios");
         }
         public int Mostrar(dynamic Entidad)
         {
