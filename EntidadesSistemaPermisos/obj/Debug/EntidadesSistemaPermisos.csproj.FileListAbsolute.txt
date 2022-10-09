@@ -1,0 +1,5 @@
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\EntidadesSistemaPermisos\bin\Debug\EntidadesSistemaPermisos.dll
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\EntidadesSistemaPermisos\bin\Debug\EntidadesSistemaPermisos.pdb
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\EntidadesSistemaPermisos\obj\Debug\EntidadesSistemaPermisos.csproj.CoreCompileInputs.cache
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\EntidadesSistemaPermisos\obj\Debug\EntidadesSistemaPermisos.dll
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\EntidadesSistemaPermisos\obj\Debug\EntidadesSistemaPermisos.pdb
