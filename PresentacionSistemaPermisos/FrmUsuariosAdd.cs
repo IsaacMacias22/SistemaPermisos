@@ -18,6 +18,17 @@ namespace PresentacionSistemaPermisos
         {
             InitializeComponent();
             manejadorUsuarios = new ManejadorUsuarios();
+            if(FrmUsuarios.usuario.IdUsuario > 0)
+            {
+                lblUsuarios.Text = "Actualizar usuario";
+                txtUsuario.Text = FrmUsuarios.usuario.Usuario;
+                txtPassword.Text = FrmUsuarios.usuario.Pwd;
+                txtNombre.Text = FrmUsuarios.usuario.Nombre;
+                txtApellidop.Text = FrmUsuarios.usuario.Apellidop;
+                txtApellidom.Text = FrmUsuarios.usuario.Apellidom;
+                mtxtRfc.Text = FrmUsuarios.usuario.Rfc;
+                dtpFdn.Value = Convert.ToDateTime(FrmUsuarios.usuario.FechaNacimiento);
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
