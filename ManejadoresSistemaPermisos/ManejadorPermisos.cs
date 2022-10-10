@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using CRUD;
 using AccesoDatosSistemaPermisos;
 using System.Drawing;
-
+using EntidadesSistemaPermisos;
 namespace ManejadoresSistemaPermisos
 {
     public class ManejadorPermisos : IManejador
@@ -42,6 +42,10 @@ namespace ManejadoresSistemaPermisos
             caja.DataSource = accesoUsuarios.Mostrar("").Tables["usuarios"];
             caja.DisplayMember = "usuario";
             caja.ValueMember = "idusuario";
+        }
+        public List<Permisos> GetPermisos(string dato)
+        {
+            return accesoPermisos.GetPermisos(dato);
         }
     }
 }

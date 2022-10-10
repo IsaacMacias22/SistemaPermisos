@@ -38,7 +38,7 @@ namespace PresentacionSistemaPermisos
             {
                 MessageBox.Show("Acceso concedido","",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                FrmMenu fm = new FrmMenu();
+                FrmMenu fm = new FrmMenu(usuario);
                 fm.Show();
             }
             else
