@@ -32,6 +32,7 @@ namespace PresentacionSistemaPermisos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.optPermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.optSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@ namespace PresentacionSistemaPermisos
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optUsuarios,
+            this.optPermisos,
             this.optSalir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -58,6 +60,15 @@ namespace PresentacionSistemaPermisos
             this.optUsuarios.Size = new System.Drawing.Size(113, 47);
             this.optUsuarios.Text = "Usuarios";
             this.optUsuarios.Click += new System.EventHandler(this.optUsuarios_Click);
+            // 
+            // optPermisos
+            // 
+            this.optPermisos.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optPermisos.Image = global::PresentacionSistemaPermisos.Properties.Resources.alumno;
+            this.optPermisos.Name = "optPermisos";
+            this.optPermisos.Size = new System.Drawing.Size(115, 47);
+            this.optPermisos.Text = "Permisos";
+            this.optPermisos.Click += new System.EventHandler(this.optPermisos_Click);
             // 
             // optSalir
             // 
@@ -95,5 +106,6 @@ namespace PresentacionSistemaPermisos
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optUsuarios;
         private System.Windows.Forms.ToolStripMenuItem optSalir;
+        private System.Windows.Forms.ToolStripMenuItem optPermisos;
     }
 }

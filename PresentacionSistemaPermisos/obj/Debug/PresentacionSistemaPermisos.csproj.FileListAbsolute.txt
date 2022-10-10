@@ -45,3 +45,5 @@ D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\bin\Debug\CRUD.dll
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\bin\Debug\CRUD.pdb
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmUsuariosAdd.resources
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmPermisos.resources
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmPermisosAdd.resources

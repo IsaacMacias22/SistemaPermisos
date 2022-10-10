@@ -83,6 +83,16 @@ namespace PresentacionSistemaPermisos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alumno {
+            get {
+                object obj = ResourceManager.GetObject("alumno", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clave {
             get {
                 object obj = ResourceManager.GetObject("clave", resourceCulture);

@@ -28,5 +28,12 @@ namespace PresentacionSistemaPermisos
             formUsuarios.ShowDialog();
             formUsuarios.MdiParent = this;
         }
+
+        private void optPermisos_Click(object sender, EventArgs e)
+        {
+            FrmPermisos frmPermisos = new FrmPermisos();
+            frmPermisos.ShowDialog();
+            frmPermisos.MdiParent = this;
+        }
     }
 }
