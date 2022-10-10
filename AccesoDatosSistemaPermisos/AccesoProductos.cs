@@ -12,7 +12,7 @@ namespace AccesoDatosSistemaPermisos
         Base b = new Base("localhost", "root", "", "sistemapermisos");
         public void Borrar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            b.Comando(string.Format("call p_deleteProductos('{0}')", Entidad.CodigoBarras));
         }
 
         public void Guardar(dynamic Entidad)

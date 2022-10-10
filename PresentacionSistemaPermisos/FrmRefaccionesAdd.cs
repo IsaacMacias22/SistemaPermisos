@@ -18,6 +18,14 @@ namespace PresentacionSistemaPermisos
         {
             InitializeComponent();
             manejadorProductos = new ManejadorProductos();
+            if (!FrmRefacciones.producto.CodigoBarras.Equals(""))
+            {
+                txtCodigoBarras.Enabled = false;
+                txtCodigoBarras.Text = FrmRefacciones.producto.CodigoBarras;
+                txtDescripcion.Text = FrmRefacciones.producto.Descripcion;
+                txtMarca.Text = FrmRefacciones.producto.Marca;
+                txtNombre.Text = FrmRefacciones.producto.Nombre;
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
