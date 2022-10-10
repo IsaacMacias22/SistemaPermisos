@@ -35,6 +35,7 @@ namespace PresentacionSistemaPermisos
             this.optPermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.optTaller = new System.Windows.Forms.ToolStripMenuItem();
             this.optSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.optRefacciones = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@ namespace PresentacionSistemaPermisos
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optUsuarios,
             this.optPermisos,
+            this.optRefacciones,
             this.optTaller,
             this.optSalir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -90,6 +92,15 @@ namespace PresentacionSistemaPermisos
             this.optSalir.Text = "Salir";
             this.optSalir.Click += new System.EventHandler(this.optSalir_Click);
             // 
+            // optRefacciones
+            // 
+            this.optRefacciones.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optRefacciones.Image = global::PresentacionSistemaPermisos.Properties.Resources.herramientas;
+            this.optRefacciones.Name = "optRefacciones";
+            this.optRefacciones.Size = new System.Drawing.Size(139, 47);
+            this.optRefacciones.Text = "Refacciones";
+            this.optRefacciones.Click += new System.EventHandler(this.optRefacciones_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -119,5 +130,6 @@ namespace PresentacionSistemaPermisos
         private System.Windows.Forms.ToolStripMenuItem optSalir;
         private System.Windows.Forms.ToolStripMenuItem optPermisos;
         private System.Windows.Forms.ToolStripMenuItem optTaller;
+        private System.Windows.Forms.ToolStripMenuItem optRefacciones;
     }
 }
