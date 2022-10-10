@@ -222,7 +222,7 @@ BEGIN
 		INSERT INTO herramientas VALUES(p_codigoherramienta, p_nombre, p_medida, p_marca, p_descripcion);
 	ELSE if X > 0 then
 		UPDATE herramientas SET nombre = p_nombre, medida = p_medida, marca = p_marca,
-		decripcion = p_descripcion WHERE codigoherramienta = p_codigoherramienta;
+		descripcion = p_descripcion WHERE codigoherramienta = p_codigoherramienta;
 	END if;
 	END if;
 END;;
