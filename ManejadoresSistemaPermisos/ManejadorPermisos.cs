@@ -17,7 +17,7 @@ namespace ManejadoresSistemaPermisos
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void Guardar(dynamic Entidad)

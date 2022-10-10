@@ -12,7 +12,7 @@ namespace AccesoDatosSistemaPermisos
         Base b = new Base("localhost", "root", "", "sistemapermisos");
         public void Borrar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void Guardar(dynamic Entidad)

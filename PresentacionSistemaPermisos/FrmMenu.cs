@@ -15,6 +15,7 @@ namespace PresentacionSistemaPermisos
         public FrmMenu()
         {
             InitializeComponent();
+            optPermisos.Visible = false;
         }
 
         private void optSalir_Click(object sender, EventArgs e)
