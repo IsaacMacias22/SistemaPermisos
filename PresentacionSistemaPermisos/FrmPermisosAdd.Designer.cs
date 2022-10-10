@@ -38,11 +38,11 @@ namespace PresentacionSistemaPermisos
             this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             this.cmbModulo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkAcceso = new System.Windows.Forms.CheckBox();
-            this.chkLectura = new System.Windows.Forms.CheckBox();
-            this.chkEscritura = new System.Windows.Forms.CheckBox();
-            this.chkEliminacion = new System.Windows.Forms.CheckBox();
             this.chkActualizacion = new System.Windows.Forms.CheckBox();
+            this.chkEliminacion = new System.Windows.Forms.CheckBox();
+            this.chkEscritura = new System.Windows.Forms.CheckBox();
+            this.chkLectura = new System.Windows.Forms.CheckBox();
+            this.chkAcceso = new System.Windows.Forms.CheckBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,6 +115,7 @@ namespace PresentacionSistemaPermisos
             // 
             // cmbUsuarios
             // 
+            this.cmbUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbUsuarios.FormattingEnabled = true;
             this.cmbUsuarios.Location = new System.Drawing.Point(16, 112);
             this.cmbUsuarios.Name = "cmbUsuarios";
@@ -123,6 +124,7 @@ namespace PresentacionSistemaPermisos
             // 
             // cmbModulo
             // 
+            this.cmbModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbModulo.FormattingEnabled = true;
             this.cmbModulo.Items.AddRange(new object[] {
             "Refacciones",
@@ -146,35 +148,15 @@ namespace PresentacionSistemaPermisos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Permisos";
             // 
-            // chkAcceso
+            // chkActualizacion
             // 
-            this.chkAcceso.AutoSize = true;
-            this.chkAcceso.Location = new System.Drawing.Point(16, 39);
-            this.chkAcceso.Name = "chkAcceso";
-            this.chkAcceso.Size = new System.Drawing.Size(81, 24);
-            this.chkAcceso.TabIndex = 0;
-            this.chkAcceso.Text = "Acceso";
-            this.chkAcceso.UseVisualStyleBackColor = true;
-            // 
-            // chkLectura
-            // 
-            this.chkLectura.AutoSize = true;
-            this.chkLectura.Location = new System.Drawing.Point(16, 79);
-            this.chkLectura.Name = "chkLectura";
-            this.chkLectura.Size = new System.Drawing.Size(82, 24);
-            this.chkLectura.TabIndex = 1;
-            this.chkLectura.Text = "Lectura";
-            this.chkLectura.UseVisualStyleBackColor = true;
-            // 
-            // chkEscritura
-            // 
-            this.chkEscritura.AutoSize = true;
-            this.chkEscritura.Location = new System.Drawing.Point(16, 118);
-            this.chkEscritura.Name = "chkEscritura";
-            this.chkEscritura.Size = new System.Drawing.Size(91, 24);
-            this.chkEscritura.TabIndex = 2;
-            this.chkEscritura.Text = "Escritura";
-            this.chkEscritura.UseVisualStyleBackColor = true;
+            this.chkActualizacion.AutoSize = true;
+            this.chkActualizacion.Location = new System.Drawing.Point(161, 79);
+            this.chkActualizacion.Name = "chkActualizacion";
+            this.chkActualizacion.Size = new System.Drawing.Size(122, 24);
+            this.chkActualizacion.TabIndex = 4;
+            this.chkActualizacion.Text = "Actualización";
+            this.chkActualizacion.UseVisualStyleBackColor = true;
             // 
             // chkEliminacion
             // 
@@ -186,15 +168,35 @@ namespace PresentacionSistemaPermisos
             this.chkEliminacion.Text = "Eliminación";
             this.chkEliminacion.UseVisualStyleBackColor = true;
             // 
-            // chkActualizacion
+            // chkEscritura
             // 
-            this.chkActualizacion.AutoSize = true;
-            this.chkActualizacion.Location = new System.Drawing.Point(161, 79);
-            this.chkActualizacion.Name = "chkActualizacion";
-            this.chkActualizacion.Size = new System.Drawing.Size(122, 24);
-            this.chkActualizacion.TabIndex = 4;
-            this.chkActualizacion.Text = "Actualización";
-            this.chkActualizacion.UseVisualStyleBackColor = true;
+            this.chkEscritura.AutoSize = true;
+            this.chkEscritura.Location = new System.Drawing.Point(16, 118);
+            this.chkEscritura.Name = "chkEscritura";
+            this.chkEscritura.Size = new System.Drawing.Size(91, 24);
+            this.chkEscritura.TabIndex = 2;
+            this.chkEscritura.Text = "Escritura";
+            this.chkEscritura.UseVisualStyleBackColor = true;
+            // 
+            // chkLectura
+            // 
+            this.chkLectura.AutoSize = true;
+            this.chkLectura.Location = new System.Drawing.Point(16, 79);
+            this.chkLectura.Name = "chkLectura";
+            this.chkLectura.Size = new System.Drawing.Size(82, 24);
+            this.chkLectura.TabIndex = 1;
+            this.chkLectura.Text = "Lectura";
+            this.chkLectura.UseVisualStyleBackColor = true;
+            // 
+            // chkAcceso
+            // 
+            this.chkAcceso.AutoSize = true;
+            this.chkAcceso.Location = new System.Drawing.Point(16, 39);
+            this.chkAcceso.Name = "chkAcceso";
+            this.chkAcceso.Size = new System.Drawing.Size(81, 24);
+            this.chkAcceso.TabIndex = 0;
+            this.chkAcceso.Text = "Acceso";
+            this.chkAcceso.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 

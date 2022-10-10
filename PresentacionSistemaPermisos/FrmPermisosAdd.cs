@@ -20,6 +20,18 @@ namespace PresentacionSistemaPermisos
             InitializeComponent();
             manejadorPermisos = new ManejadorPermisos();
             manejadorPermisos.ExtraerUsuarios(cmbUsuarios);
+            if(FrmPermisos.permiso.FkidUsuario > 0 && FrmPermisos.permiso.FkidModulo > 0)
+            {
+                cmbUsuarios.Text = FrmPermisos.usuario;
+                cmbModulo.Text = FrmPermisos.modulo;
+                cmbUsuarios.Enabled = false;
+                cmbModulo.Enabled = false;
+                chkAcceso.Checked = FrmPermisos.permiso.PermisoAcceso;
+                chkLectura.Checked = FrmPermisos.permiso.PermisoLectura;
+                chkEscritura.Checked = FrmPermisos.permiso.PermisoEscritura;
+                chkEliminacion.Checked = FrmPermisos.permiso.PermisoEliminacion;
+                chkActualizacion.Checked = FrmPermisos.permiso.PermisoActualizacion;
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -29,9 +41,7 @@ namespace PresentacionSistemaPermisos
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cmbUsuarios.SelectedValue.ToString());
             ComprobarPermisos();
-
             manejadorPermisos.Guardar(new Permisos(
                 int.Parse(cmbUsuarios.SelectedValue.ToString()), cmbModulo.SelectedIndex+1,
                 acceso, lectura, escritura, eliminacion, actualizacion

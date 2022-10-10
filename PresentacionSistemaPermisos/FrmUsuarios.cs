@@ -69,9 +69,9 @@ namespace PresentacionSistemaPermisos
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-
+            Actualizar();
         }
 
         private void dtgUsuarios_CellEnter(object sender, DataGridViewCellEventArgs e)

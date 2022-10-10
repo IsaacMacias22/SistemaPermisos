@@ -14,7 +14,10 @@ namespace PresentacionSistemaPermisos
     public partial class FrmPermisos : Form
     {
         ManejadorPermisos manejadorPermisos;
-        Permisos permiso = new Permisos(0,0,false,false,false,false,false);
+        public static Permisos permiso = new Permisos(0,0,false,false,false,false,false);
+        public static string usuario = "";
+        public static string modulo = "";
+        int fila = 0, col = 0;
         public FrmPermisos()
         {
             InitializeComponent();
@@ -42,6 +45,39 @@ namespace PresentacionSistemaPermisos
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void dtgPermisos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            usuario = dtgPermisos.Rows[fila].Cells[2].Value.ToString();
+            modulo = dtgPermisos.Rows[fila].Cells[3].Value.ToString();
+            permiso.FkidUsuario = int.Parse(dtgPermisos.Rows[fila].Cells[0].Value.ToString());
+            permiso.FkidModulo = int.Parse(dtgPermisos.Rows[fila].Cells[1].Value.ToString());
+            permiso.PermisoAcceso = bool.Parse(dtgPermisos.Rows[fila].Cells[4].Value.ToString());
+            permiso.PermisoLectura = bool.Parse(dtgPermisos.Rows[fila].Cells[5].Value.ToString());
+            permiso.PermisoEscritura = bool.Parse(dtgPermisos.Rows[fila].Cells[6].Value.ToString());
+            permiso.PermisoEliminacion = bool.Parse(dtgPermisos.Rows[fila].Cells[7].Value.ToString());
+            permiso.PermisoActualizacion = bool.Parse(dtgPermisos.Rows[fila].Cells[8].Value.ToString());
+            switch (col)
+            {
+                case 9:
+                {
+                    FrmPermisosAdd frmPermisosAdd = new FrmPermisosAdd();
+                    frmPermisosAdd.ShowDialog();
+                    Actualizar();
+                } break;
+            }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
+
+        private void dtgPermisos_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            fila = e.RowIndex;
+            col = e.ColumnIndex;
         }
     }
 }
