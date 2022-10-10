@@ -13,7 +13,7 @@ namespace AccesoDatosSistemaPermisos
         Base b = new Base("localhost", "root", "", "sistemapermisos");
         public void Borrar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            b.Comando(string.Format("call p_deleteUsuarios({0})", Entidad.IdUsuario));
         }
 
         public void Guardar(dynamic Entidad)
