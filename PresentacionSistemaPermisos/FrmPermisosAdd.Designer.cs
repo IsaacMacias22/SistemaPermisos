@@ -57,7 +57,7 @@ namespace PresentacionSistemaPermisos
             this.panel1.Controls.Add(this.lblPermisos);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(602, 65);
+            this.panel1.Size = new System.Drawing.Size(600, 65);
             this.panel1.TabIndex = 17;
             // 
             // pictureBox1

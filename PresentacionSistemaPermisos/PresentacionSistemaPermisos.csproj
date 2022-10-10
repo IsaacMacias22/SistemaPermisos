@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmTaller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaller.Designer.cs">
+      <DependentUpon>FrmTaller.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="FrmPermisosAdd.Designer.cs">
       <DependentUpon>FrmPermisosAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTallerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTallerAdd.Designer.cs">
+      <DependentUpon>FrmTallerAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmTaller.resx">
+      <DependentUpon>FrmTaller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPermisosAdd.resx">
       <DependentUpon>FrmPermisosAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTallerAdd.resx">
+      <DependentUpon>FrmTallerAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>

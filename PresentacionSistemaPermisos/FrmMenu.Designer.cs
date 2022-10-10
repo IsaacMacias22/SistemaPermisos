@@ -33,6 +33,7 @@ namespace PresentacionSistemaPermisos
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.optPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.optTaller = new System.Windows.Forms.ToolStripMenuItem();
             this.optSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@ namespace PresentacionSistemaPermisos
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optUsuarios,
             this.optPermisos,
+            this.optTaller,
             this.optSalir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -69,6 +71,15 @@ namespace PresentacionSistemaPermisos
             this.optPermisos.Size = new System.Drawing.Size(115, 47);
             this.optPermisos.Text = "Permisos";
             this.optPermisos.Click += new System.EventHandler(this.optPermisos_Click);
+            // 
+            // optTaller
+            // 
+            this.optTaller.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optTaller.Image = global::PresentacionSistemaPermisos.Properties.Resources.mecanico;
+            this.optTaller.Name = "optTaller";
+            this.optTaller.Size = new System.Drawing.Size(85, 47);
+            this.optTaller.Text = "Taller";
+            this.optTaller.Click += new System.EventHandler(this.optHerramientas_Click);
             // 
             // optSalir
             // 
@@ -107,5 +118,6 @@ namespace PresentacionSistemaPermisos
         private System.Windows.Forms.ToolStripMenuItem optUsuarios;
         private System.Windows.Forms.ToolStripMenuItem optSalir;
         private System.Windows.Forms.ToolStripMenuItem optPermisos;
+        private System.Windows.Forms.ToolStripMenuItem optTaller;
     }
 }
