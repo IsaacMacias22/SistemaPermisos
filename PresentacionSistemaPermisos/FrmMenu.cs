@@ -15,6 +15,8 @@ namespace PresentacionSistemaPermisos
     {
         ManejadorPermisos manejadorPermisos;
         List<Permisos> permisos;
+        Permisos permisosTaller;
+        Permisos permisosRefacciones;
         public FrmMenu(Usuarios usuario)
         {
             InitializeComponent();
@@ -25,18 +27,35 @@ namespace PresentacionSistemaPermisos
                 optPermisos.Visible = false;
                 optRefacciones.Visible = false;
                 optTaller.Visible = false;
-                RevisarPermisos(usuario.Usuario);
+                RevisarPermisos(usuario);
+            }
+            else
+            {
+                permisosRefacciones = new Permisos(usuario.IdUsuario, 1,
+                true, true, true, true, true);
+                permisosTaller = new Permisos(usuario.IdUsuario, 2,
+                    true, true, true, true, true);
             }
         }
-        void RevisarPermisos(string dato)
+        void RevisarPermisos(Usuarios usuario)
         {
-            permisos = manejadorPermisos.GetPermisos(dato);
+            permisos = manejadorPermisos.GetPermisos(usuario.Usuario);
             foreach (var item in permisos)
             {
                 if (item.FkidModulo == 1 && item.PermisoAcceso == true)
+                {
                     optRefacciones.Visible = true;
+                    permisosRefacciones = new Permisos(usuario.IdUsuario, 1,
+                        item.PermisoAcceso, item.PermisoLectura, item.PermisoEscritura,
+                        item.PermisoEliminacion, item.PermisoActualizacion);
+                }
                 if (item.FkidModulo == 2 && item.PermisoAcceso == true)
+                {
                     optTaller.Visible = true;
+                    permisosTaller = new Permisos(usuario.IdUsuario, 2,
+                        item.PermisoAcceso, item.PermisoLectura, item.PermisoEscritura,
+                        item.PermisoEliminacion, item.PermisoActualizacion);
+                }
             }
         }
 
@@ -68,7 +87,7 @@ namespace PresentacionSistemaPermisos
 
         private void optRefacciones_Click(object sender, EventArgs e)
         {
-            FrmRefacciones frmRefacciones = new FrmRefacciones();
+            FrmRefacciones frmRefacciones = new FrmRefacciones(permisosRefacciones);
             frmRefacciones.ShowDialog();
             frmRefacciones.MdiParent = this;
         }

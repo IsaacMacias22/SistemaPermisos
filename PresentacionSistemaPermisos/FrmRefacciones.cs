@@ -16,10 +16,26 @@ namespace PresentacionSistemaPermisos
         ManejadorProductos manejadorProductos;
         public static Productos producto = new Productos("", "", "", "");
         int fila = 0, col = 0;
-        public FrmRefacciones()
+        bool eliminar = true, actualizar = true;
+        public FrmRefacciones(Permisos permiso)
         {
             InitializeComponent();
             manejadorProductos = new ManejadorProductos();
+            RevisarPermisos(permiso);
+        }
+        void RevisarPermisos(Permisos permiso)
+        {
+            if (permiso.PermisoLectura == false)
+            {
+                dtgProductos.Visible = false;
+                txtBuscar.Visible = false;
+            }
+            if (permiso.PermisoEscritura == false)
+                btnAgregar.Visible = false;
+            if (permiso.PermisoEliminacion == false)
+                eliminar = false;
+            if (permiso.PermisoActualizacion == false)
+                actualizar = false;
         }
         void Actualizar()
         {
@@ -59,14 +75,20 @@ namespace PresentacionSistemaPermisos
             {
                 case 4:
                     {
-                        FrmRefaccionesAdd frmRefaccionesAdd = new FrmRefaccionesAdd();
-                        frmRefaccionesAdd.ShowDialog();
-                        Actualizar();
+                        if (actualizar)
+                        {
+                            FrmRefaccionesAdd frmRefaccionesAdd = new FrmRefaccionesAdd();
+                            frmRefaccionesAdd.ShowDialog();
+                            Actualizar();
+                        }
                     } break;
                 case 5:
                     {
-                        manejadorProductos.Borrar(producto);
-                        Actualizar();
+                        if (eliminar)
+                        {
+                            manejadorProductos.Borrar(producto);
+                            Actualizar();
+                        }
                     } break;
             }
         }
