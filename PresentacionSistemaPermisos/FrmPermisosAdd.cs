@@ -22,6 +22,7 @@ namespace PresentacionSistemaPermisos
             manejadorPermisos.ExtraerUsuarios(cmbUsuarios);
             if(FrmPermisos.permiso.FkidUsuario > 0 && FrmPermisos.permiso.FkidModulo > 0)
             {
+                lblPermisos.Text = "Modificar Permisos";
                 cmbUsuarios.Text = FrmPermisos.usuario;
                 cmbModulo.Text = FrmPermisos.modulo;
                 cmbUsuarios.Enabled = false;
