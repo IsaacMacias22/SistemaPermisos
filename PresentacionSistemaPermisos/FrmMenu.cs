@@ -80,7 +80,7 @@ namespace PresentacionSistemaPermisos
 
         private void optHerramientas_Click(object sender, EventArgs e)
         {
-            FrmTaller frmTaller = new FrmTaller();
+            FrmTaller frmTaller = new FrmTaller(permisosTaller);
             frmTaller.ShowDialog();
             frmTaller.MdiParent = this;
         }

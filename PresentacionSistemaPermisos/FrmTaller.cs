@@ -16,10 +16,26 @@ namespace PresentacionSistemaPermisos
         ManejadorHerramientas manejadorHerramientas;
         public static Herramientas herramienta = new Herramientas("","","","","");
         int fila = 0, col = 0;
-        public FrmTaller()
+        bool eliminar = true, actualizar = true;
+        public FrmTaller(Permisos permiso)
         {
             InitializeComponent();
             manejadorHerramientas = new ManejadorHerramientas();
+            RevisarPermisos(permiso);
+        }
+        void RevisarPermisos(Permisos permiso)
+        {
+            if (permiso.PermisoLectura == false)
+            {
+                dtgHerramientas.Visible = false;
+                txtBuscar.Visible = false;
+            }
+            if (permiso.PermisoEscritura == false)
+                btnAgregar.Visible = false;
+            if (permiso.PermisoEliminacion == false)
+                eliminar = false;
+            if (permiso.PermisoActualizacion == false)
+                actualizar = false;
         }
         void Actualizar()
         {
@@ -60,14 +76,20 @@ namespace PresentacionSistemaPermisos
             {
                 case 5:
                     {
-                        FrmTallerAdd frmTallerAdd = new FrmTallerAdd();
-                        frmTallerAdd.ShowDialog();
-                        Actualizar();
+                        if (actualizar)
+                        {
+                            FrmTallerAdd frmTallerAdd = new FrmTallerAdd();
+                            frmTallerAdd.ShowDialog();
+                            Actualizar();
+                        }
                     } break;
                 case 6:
                     {
-                        manejadorHerramientas.Borrar(herramienta);
-                        Actualizar();
+                        if (eliminar)
+                        {
+                            manejadorHerramientas.Borrar(herramienta);
+                            Actualizar();
+                        }
                     } break;
             }
         }
