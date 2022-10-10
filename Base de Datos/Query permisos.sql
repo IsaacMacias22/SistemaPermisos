@@ -102,7 +102,7 @@ BEGIN
 	OR rfc LIKE p_filtro;
 END;;
 
-CALL p_showUsuarios('%admin%');
+CALL p_showUsuarios('%%');
 
 
 delimiter ;;
@@ -147,7 +147,7 @@ CREATE PROCEDURE p_showPermisos(
 IN p_filtro VARCHAR(100)
 )
 BEGIN	
-	SELECT us.usuario, mo.nombre, pe.permisoAcceso, pe.permisoLectura, pe.permisoEscritura, pe.permisoEliminacion, pe.permisoActualizacion
+	SELECT us.idusuario, mo.idmodulo, us.usuario, mo.nombre AS modulo, pe.permisoAcceso, pe.permisoLectura, pe.permisoEscritura, pe.permisoEliminacion, pe.permisoActualizacion
 	 FROM permisos pe, usuarios us, modulos mo
 	 WHERE us.idusuario = pe.fkidusuario AND mo.idmodulo = pe.fkidmodulo
 	 AND us.usuario LIKE p_filtro;
@@ -254,3 +254,4 @@ BEGIN
 END;;
 
 CALL p_showHerramientas('%%');
+SELECT * FROM usuarios;

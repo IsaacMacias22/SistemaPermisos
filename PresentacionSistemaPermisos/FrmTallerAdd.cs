@@ -18,6 +18,15 @@ namespace PresentacionSistemaPermisos
         {
             InitializeComponent();
             manejadorHerramientas = new ManejadorHerramientas();
+            if (!FrmTaller.herramienta.CodigoHerramienta.Equals(""))
+            {
+                txtCodigo.Enabled = false;
+                txtCodigo.Text = FrmTaller.herramienta.CodigoHerramienta;
+                txtNombre.Text = FrmTaller.herramienta.Nombre;
+                txtMedida.Text = FrmTaller.herramienta.Medida;
+                txtMarca.Text = FrmTaller.herramienta.Marca;
+                txtDescripcion.Text = FrmTaller.herramienta.Descripcion;
+            }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

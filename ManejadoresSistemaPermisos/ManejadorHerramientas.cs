@@ -16,7 +16,10 @@ namespace ManejadoresSistemaPermisos
         Grafico g = new Grafico();
         public void Borrar(dynamic Entidad)
         {
-            throw new NotImplementedException();
+            DialogResult rs = MessageBox.Show(string.Format("¿Estás seguro de borrar?"), "¡Atención!",
+                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (rs == DialogResult.Yes)
+                accesoHerramientas.Borrar(Entidad);
         }
 
         public void Guardar(dynamic Entidad)
