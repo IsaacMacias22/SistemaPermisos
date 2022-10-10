@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmRefacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRefacciones.Designer.cs">
+      <DependentUpon>FrmRefacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRefaccionesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRefaccionesAdd.Designer.cs">
+      <DependentUpon>FrmRefaccionesAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTaller.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmRefacciones.resx">
+      <DependentUpon>FrmRefacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRefaccionesAdd.resx">
+      <DependentUpon>FrmRefaccionesAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTaller.resx">
       <DependentUpon>FrmTaller.cs</DependentUpon>
     </EmbeddedResource>

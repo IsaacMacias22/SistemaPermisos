@@ -49,3 +49,5 @@ D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmPermisosAdd.resources
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmTaller.resources
 D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmTallerAdd.resources
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmRefacciones.resources
+D:\TECMM\Semestre 5\Administración de Bases de Datos\Proyectos\SistemaPermisos\PresentacionSistemaPermisos\PresentacionSistemaPermisos\obj\Debug\PresentacionSistemaPermisos.FrmRefaccionesAdd.resources

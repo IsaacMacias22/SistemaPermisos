@@ -42,5 +42,12 @@ namespace PresentacionSistemaPermisos
             frmTaller.ShowDialog();
             frmTaller.MdiParent = this;
         }
+
+        private void optRefacciones_Click(object sender, EventArgs e)
+        {
+            FrmRefacciones frmRefacciones = new FrmRefacciones();
+            frmRefacciones.ShowDialog();
+            frmRefacciones.MdiParent = this;
+        }
     }
 }
